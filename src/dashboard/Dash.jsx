@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 
 export default function Dash() {
   const [dialogs, setDialogs] = useState([]);
+  const [userId, setUserId] = useState("");
 
   useEffect(() => {
     async function getDialogs() {
@@ -30,6 +31,12 @@ export default function Dash() {
 
   const navigate = useNavigate();
 
+  function submitId() {
+    if (userId.trim() !== "") {
+      navigate("/select");
+    }
+  }
+
   return (
     <div className="dash-page">
       <div className="dash-title">
@@ -40,8 +47,10 @@ export default function Dash() {
           type="text"
           placeholder="Enter the user's ID"
           className="id-input"
+          value={userId}
+          onChange={(e) => setUserId(e.target.value)}
         />
-        <button className="trace-btn" onClick={() => navigate("/select")}>
+        <button className="trace-btn" onClick={submitId}>
           Trace !
         </button>
       </div>
