@@ -1,0 +1,64 @@
+/* Card container */
+.user-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  padding: 20px;
+  max-width: 350px;
+  margin: 20px auto;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.user-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Avatar with Telegram blue gradient */
+.user-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #0088cc, #00bfff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 15px;
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* User info */
+.user-name {
+  font-size: 22px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 5px;
+}
+
+.user-id {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .user-card {
+    max-width: 90%;
+    padding: 15px;
+  }
+  .user-avatar {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+  }
+  .user-name {
+    font-size: 18px;
+  }
+  .user-id {
+    font-size: 12px;
+  }
+}

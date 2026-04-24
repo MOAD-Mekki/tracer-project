@@ -43,7 +43,7 @@ export default function Form() {
 
 
             if (data.success){
-                navigat("/dashboard");
+                navigat(data.redirect);
             }
             console.log(data);
 
