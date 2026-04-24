@@ -1,11 +1,13 @@
 import './Form.css'
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 export default function Form() {
 
     const [phone, setPhone] = useState("");
     const [code, setCode] = useState("");
     const [hash, setHash] = useState("");
+    const navigat = useNavigate();
 
 
         async function submitPhone() {
@@ -38,6 +40,11 @@ export default function Form() {
             });
             
             const data = await res.json();
+
+
+            if (data.success){
+                navigat("/dashboard");
+            }
             console.log(data);
 
         }
@@ -62,7 +69,7 @@ export default function Form() {
                          value={code} 
                          onChange={(e) => setCode(e.target.value)} />
                     </div>
-                        <button className="submit-btn" onClick={submitCode}>Submit</button>
+                        <button className="submit-btn" onClick={submitCode} >Submit</button>
                 </div>
             </div>
         </div>
