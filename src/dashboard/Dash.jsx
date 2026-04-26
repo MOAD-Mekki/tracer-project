@@ -3,7 +3,7 @@ import Card from "./UserCard";
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
-export default function Dash() {
+export default function Dash({ setData }) {
   const [dialogs, setDialogs] = useState([]);
   const [userId, setUserId] = useState("");
 
@@ -31,12 +31,25 @@ export default function Dash() {
 
   const navigate = useNavigate();
 
-  function submitId() {
-    if (userId.trim() !== "") {
+  async function submitId() {
+    const res = await fetch("http://localhost:3000/selectUser", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        userId: userId,
+      }),
+    });
+
+    const data = await res.json();
+
+    if (data.success) {
       navigate("/select");
     }
-  }
 
+    setData(data);
+  }
   return (
     <div className="dash-page">
       <div className="dash-title">
@@ -47,6 +60,7 @@ export default function Dash() {
           type="text"
           placeholder="Enter the user's ID"
           className="id-input"
+          required
           value={userId}
           onChange={(e) => setUserId(e.target.value)}
         />

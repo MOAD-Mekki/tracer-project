@@ -4,8 +4,10 @@ import Form from "./form/Form";
 import Dash from "./dashboard/Dash";
 import Select from "./select/Select";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useState } from "react";
 
 function App() {
+  const [data, setData] = useState();
   return (
     <BrowserRouter>
       <Routes>
@@ -13,9 +15,9 @@ function App() {
 
         <Route path="/form" element={<Form />} />
 
-        <Route path="/dashboard" element={<Dash />} />
+        <Route path="/dashboard" element={<Dash setData={setData} />} />
 
-        <Route path="/select" element={<Select />} />
+        <Route path="/select" element={<Select data={data} />} />
       </Routes>
     </BrowserRouter>
   );
