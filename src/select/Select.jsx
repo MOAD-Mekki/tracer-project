@@ -11,11 +11,9 @@ export default function Select({ data }) {
     : "Not Close Friend";
   const username = data?.result?.username || "Empty";
   const phone = data?.result?.phone || "No phone";
-  const dataStatus = data?.result?.status?.className;
-  let status = "Unknown";
-  if (dataStatus === "userStatusRecently") status = "Recently online";
-  else if (dataStatus === "userStatusOnline") status = "User online";
-  else if (dataStatus === "userStatusOffline") status = "User offline";
+  const status = data?.result?.status?.className;
+  const lastOnline = new Date(data?.result?.status?.wasOnline * 1000);
+  
   return (
     <div className="select-page">
       <div className="user">
@@ -41,6 +39,9 @@ export default function Select({ data }) {
           </p>
           <p>
             <strong>Status:</strong> {status}
+          </p>
+          <p>
+            <strong>Last seen:</strong> {lastOnline.toString()}
           </p>
         </div>
       </div>
