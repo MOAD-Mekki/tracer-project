@@ -1,16 +1,16 @@
-Telegram Tracer (Front-end) 🚀
+# Telegram Tracer (Front-end) 🚀
 
 A full-stack web application built with React and Telegram APIs that allows users to interact with Telegram data through a modern web interface.
 
-📌 Overview
+# 📌 Overview
 
 Telegram Tracer is a web-based platform designed to simplify Telegram-related operations using a clean graphical interface powered by the official Telegram APIs through GramJS.
 
 This project was developed as a practical full-stack learning experience, focusing on API integration, state management, frontend/backend communication, and real-world application architecture.
 
-⸻
+---
 
-✨ Features
+# ✨ Features
 
 * 🔐 Telegram authentication using API credentials
 * 👤 Fetch and display Telegram user information
@@ -21,9 +21,9 @@ This project was developed as a practical full-stack learning experience, focusi
 * 📊 Dynamic rendering of fetched data
 * 🧠 State management for handling user sessions and data flow
 
-⸻
+---
 
-🛠️ Tech Stack
+# 🛠️ Tech Stack
 
 Frontend
 
@@ -40,9 +40,9 @@ Telegram Integration
 * GramJS
 * Telegram API
 
-⸻
+---
 
-📂 Project Structure
+# 📂 Project Structure
 
 telegram-tracer/
 │
@@ -65,9 +65,9 @@ telegram-tracer/
 ├── README.md
 └── package.json
 
-⸻
+---
 
-🧠 What I Learned
+# 🧠 What I Learned
 
 During this project, I improved my understanding of:
 
@@ -77,18 +77,18 @@ During this project, I improved my understanding of:
 * Frontend and backend connectivity
 * Real-world debugging and problem solving
 
-⸻
+---
 
 
-🤝 Contributors
+# 🤝 Contributors
 
 Developed by:
 
 * Mekki MOAD
 * Amine Abdelbasset Derradji
 
-⸻
+---
 
-🌟 Support
+# 🌟 Support
 
 If you like this project, consider giving it a ⭐ on GitHub!
