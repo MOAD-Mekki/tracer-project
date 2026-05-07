@@ -1,16 +1,94 @@
-# React + Vite
+Telegram Tracer (Front-end) 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack web application built with React and Telegram APIs that allows users to interact with Telegram data through a modern web interface.
 
-Currently, two official plugins are available:
+📌 Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Telegram Tracer is a web-based platform designed to simplify Telegram-related operations using a clean graphical interface powered by the official Telegram APIs through GramJS.
 
-## React Compiler
+This project was developed as a practical full-stack learning experience, focusing on API integration, state management, frontend/backend communication, and real-world application architecture.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+⸻
 
-## Expanding the ESLint configuration
+✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* 🔐 Telegram authentication using API credentials
+* 👤 Fetch and display Telegram user information
+* 📡 Real-time interaction with Telegram services
+* 🖥️ Clean and responsive user interface
+* ⚡ Fast frontend built with React
+* 🔄 Backend API communication using Express & Node.js
+* 📊 Dynamic rendering of fetched data
+* 🧠 State management for handling user sessions and data flow
+
+⸻
+
+🛠️ Tech Stack
+
+Frontend
+
+* React.js
+* CSS3
+
+Backend
+
+* Node.js
+* Express.js
+
+Telegram Integration
+
+* GramJS
+* Telegram API
+
+⸻
+
+📂 Project Structure
+
+telegram-tracer/
+│
+├── client/                 # Frontend React application
+│   ├── public/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── assets/
+│   │   └── App.js
+│   └── package.json
+│
+├── server/                 # Backend Express server
+│   ├── routes/
+│   ├── controllers/
+│   ├── config/
+│   ├── services/
+│   └── server.js
+│
+├── README.md
+└── package.json
+
+⸻
+
+🧠 What I Learned
+
+During this project, I improved my understanding of:
+
+* Full-stack application architecture
+* React state management
+* Handling asynchronous operations
+* Frontend and backend connectivity
+* Real-world debugging and problem solving
+
+⸻
+
+
+🤝 Contributors
+
+Developed by:
+
+* Mekki MOAD
+* Amine Abdelbasset Derradji
+
+⸻
+
+🌟 Support
+
+If you like this project, consider giving it a ⭐ on GitHub!
