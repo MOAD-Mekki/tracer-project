@@ -44,6 +44,7 @@ Telegram Integration
 
 # 📂 Project Structure
 
+```
 telegram-tracer/
 │
 ├── client/                 # Frontend React application
@@ -64,6 +65,8 @@ telegram-tracer/
 │
 ├── README.md
 └── package.json
+
+```
 
 ---
 
