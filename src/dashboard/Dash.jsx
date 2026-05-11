@@ -9,7 +9,7 @@ export default function Dash({ setData }) {
 
   useEffect(() => {
     async function getDialogs() {
-      const res = await fetch("http://localhost:3000/listDialogs");
+      const res = await fetch(API_LIST_DIALOGS);
 
       const data = await res.json();
 
